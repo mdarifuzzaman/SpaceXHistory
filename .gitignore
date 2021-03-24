@@ -29,5 +29,4 @@ scjssconfig.json
 
 # vercel
 .vercel
-.env
 .prettierignore
