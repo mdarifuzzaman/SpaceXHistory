@@ -26,13 +26,6 @@ const SpaceXBlock = ({rendering}: SpaceXBlockProps): JSX.Element => {
               {item.links.flickr_images !== undefined && item.links.flickr_images.length > 0 ?
                 <> 
                   <img className="card-img-top" src={item.links.flickr_images !== undefined && item.links.flickr_images.length > 0 ? item.links.flickr_images[0]: null}></img>
-                  <div className="text-center text-info">
-                    {
-                    item.links.flickr_images.map((index:number) => (
-                      <a> {index + 1}</a>
-                    ))
-                    }
-                  </div>
                 </>
                 : null
                 }
