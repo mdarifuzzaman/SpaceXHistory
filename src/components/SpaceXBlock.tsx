@@ -11,13 +11,13 @@ type SpaceXBlockProps = StyleguideComponentProps & {
   rendering: ComponentRendering
 }
 
-const SpaceXBlock = ({rendering}: SpaceXBlockProps): JSX.Element => {
+const SpaceXBlock = ({fields, rendering}: SpaceXBlockProps): JSX.Element => {
   const externalData = rendering.uid ? useComponentProps<any>(rendering.uid): undefined;
   
   return (
     <div className="container">
         <div className="heading">
-          <h1>SpaceX landing history</h1>
+          <h1>{fields.heading}</h1>
         </div>
         <div className="row">
           {externalData?.data.map((item: any) => (
