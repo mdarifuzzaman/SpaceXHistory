@@ -17,7 +17,7 @@ const SpaceXBlock = ({fields, rendering}: SpaceXBlockProps): JSX.Element => {
   return (
     <div className="container">
         <div className="heading">
-          <h1>{fields.heading.value}</h1>
+          <h1>{fields.heading.value} - Test </h1>
         </div>
         <div className="row">
           {externalData?.data?.map((item: any) => (
