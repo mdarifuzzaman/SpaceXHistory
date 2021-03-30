@@ -20,7 +20,7 @@ const SpaceXBlock = ({fields, rendering}: SpaceXBlockProps): JSX.Element => {
           <h1>{fields.heading.value}</h1>
         </div>
         <div className="row">
-          {externalData?.data.map((item: any) => (
+          {externalData?.data?.map((item: any) => (
             <div className="row" key={item.id} >
               <div className="card" style={{width: "18rem"}}>
               {item.links.flickr_images !== undefined && item.links.flickr_images.length > 0 ?
